@@ -23,7 +23,6 @@ namespace BoardGameMaster
         public MainWindow()
         {
             InitializeComponent();
-            txt1.Focus();
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -37,16 +36,14 @@ namespace BoardGameMaster
             boardgameViewSource.View.MoveCurrentToFirst();
         }
 
-        private void tbPlayerStats_GotFocus(object sender, RoutedEventArgs e)
+        private void btnSaveCat_Click(object sender, RoutedEventArgs e)
         {
-            txt2.Focus();
+
         }
 
-        private void tbStatistics_GotFocus(object sender, RoutedEventArgs e)
+        private void btnSavePlayer_Click(object sender, RoutedEventArgs e)
         {
-            txt1.Focus();
-        }
 
- 
+        }
     }
 }
