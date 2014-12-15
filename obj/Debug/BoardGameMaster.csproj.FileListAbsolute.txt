@@ -1,0 +1,15 @@
+C:\Users\forritunh2014\Documents\Visual Studio 2013\Projects\BoardGameMaster\BoardGameMaster\bin\Debug\BoardGameMaster.exe.config
+C:\Users\forritunh2014\Documents\Visual Studio 2013\Projects\BoardGameMaster\BoardGameMaster\bin\Debug\BoardGameMaster.exe
+C:\Users\forritunh2014\Documents\Visual Studio 2013\Projects\BoardGameMaster\BoardGameMaster\bin\Debug\BoardGameMaster.pdb
+C:\Users\forritunh2014\Documents\Visual Studio 2013\Projects\BoardGameMaster\BoardGameMaster\obj\Debug\MainWindow.baml
+C:\Users\forritunh2014\Documents\Visual Studio 2013\Projects\BoardGameMaster\BoardGameMaster\obj\Debug\MainWindow.g.cs
+C:\Users\forritunh2014\Documents\Visual Studio 2013\Projects\BoardGameMaster\BoardGameMaster\obj\Debug\App.g.cs
+C:\Users\forritunh2014\Documents\Visual Studio 2013\Projects\BoardGameMaster\BoardGameMaster\obj\Debug\BoardGameMaster_MarkupCompile.cache
+C:\Users\forritunh2014\Documents\Visual Studio 2013\Projects\BoardGameMaster\BoardGameMaster\obj\Debug\BoardGameMaster.g.resources
+C:\Users\forritunh2014\Documents\Visual Studio 2013\Projects\BoardGameMaster\BoardGameMaster\obj\Debug\BoardGameMaster.Properties.Resources.resources
+C:\Users\forritunh2014\Documents\Visual Studio 2013\Projects\BoardGameMaster\BoardGameMaster\obj\Debug\BoardGameMaster.csproj.GenerateResource.Cache
+C:\Users\forritunh2014\Documents\Visual Studio 2013\Projects\BoardGameMaster\BoardGameMaster\obj\Debug\BoardGameMaster.exe
+C:\Users\forritunh2014\Documents\Visual Studio 2013\Projects\BoardGameMaster\BoardGameMaster\obj\Debug\BoardGameMaster.pdb
+C:\Users\forritunh2014\documents\visual studio 2013\Projects\BoardGameMaster\BoardGameMaster\obj\Debug\BoardGameMaster.csprojResolveAssemblyReference.cache
+C:\Users\forritunh2014\documents\visual studio 2013\Projects\BoardGameMaster\BoardGameMaster\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\forritunh2014\documents\visual studio 2013\Projects\BoardGameMaster\BoardGameMaster\obj\Debug\BoardGameMaster_MarkupCompile.lref
