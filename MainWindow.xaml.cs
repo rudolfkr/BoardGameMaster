@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,7 +23,6 @@ namespace BoardGameMaster
         public MainWindow()
         {
             InitializeComponent();
-            txt1.Focus();
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -35,18 +34,28 @@ namespace BoardGameMaster
             boardGameMasterDataSetboardgameTableAdapter.Fill(boardGameMasterDataSet.boardgame);
             System.Windows.Data.CollectionViewSource boardgameViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("boardgameViewSource")));
             boardgameViewSource.View.MoveCurrentToFirst();
+            // Load data into the table game_player_score. You can modify this code as needed.
+            BoardGameMaster.BoardGameMasterDataSetTableAdapters.game_player_scoreTableAdapter boardGameMasterDataSetgame_player_scoreTableAdapter = new BoardGameMaster.BoardGameMasterDataSetTableAdapters.game_player_scoreTableAdapter();
+            boardGameMasterDataSetgame_player_scoreTableAdapter.Fill(boardGameMasterDataSet.game_player_score);
+            System.Windows.Data.CollectionViewSource game_player_scoreViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("game_player_scoreViewSource")));
+            game_player_scoreViewSource.View.MoveCurrentToFirst();
+            // Load data into the table category. You can modify this code as needed.
+            BoardGameMaster.BoardGameMasterDataSetTableAdapters.categoryTableAdapter boardGameMasterDataSetcategoryTableAdapter = new BoardGameMaster.BoardGameMasterDataSetTableAdapters.categoryTableAdapter();
+            boardGameMasterDataSetcategoryTableAdapter.Fill(boardGameMasterDataSet.category);
+            System.Windows.Data.CollectionViewSource categoryViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("categoryViewSource")));
+            categoryViewSource.View.MoveCurrentToFirst();
         }
 
-        private void tbPlayerStats_GotFocus(object sender, RoutedEventArgs e)
+        private void btnSavePlayer_Click(object sender, RoutedEventArgs e)
         {
-            txt2.Focus();
+
         }
 
-        private void tbStatistics_GotFocus(object sender, RoutedEventArgs e)
+        private void btnSaveCat_Click(object sender, RoutedEventArgs e)
         {
-            txt1.Focus();
+            BoardGameMaster.BoardGameMasterDataSetTableAdapters.categoryTableAdapter boardGameMasterDataSetcategoryTableAdapter = new BoardGameMaster.BoardGameMasterDataSetTableAdapters.categoryTableAdapter();
+            boardGameMasterDataSetcategoryTableAdapter.Insert(txtNameCategory.Text, txtDescriptionCat.Text);
+            MessageBox.Show("Category saved");
         }
-
- 
     }
 }
