@@ -9,6 +9,7 @@
         <CollectionViewSource x:Key="game_player_scoreViewSource" Source="{Binding game_player_score, Source={StaticResource boardGameMasterDataSet}}"/>
         <CollectionViewSource x:Key="categoryViewSource" Source="{Binding category, Source={StaticResource boardGameMasterDataSet}}"/>
         <CollectionViewSource x:Key="subcategoryViewSource" Source="{Binding subcategory, Source={StaticResource boardGameMasterDataSet}}"/>
+        <CollectionViewSource x:Key="scoreViewSource" Source="{Binding score, Source={StaticResource boardGameMasterDataSet}}"/>
     </Window.Resources>
     <Grid>
         <TabControl>
@@ -82,21 +83,21 @@
                 <Grid>
                     <Label Content="Category:" HorizontalAlignment="Left" Margin="24,10,0,0" VerticalAlignment="Top"/>
                     <Label Content="Description:" HorizontalAlignment="Left" Margin="12,40,0,0" VerticalAlignment="Top"/>
-                    <Label Content="Category:" HorizontalAlignment="Left" Margin="24,130,0,0" VerticalAlignment="Top"/>
-                    <Label Content="Name:" HorizontalAlignment="Left" Margin="10,190,0,0" VerticalAlignment="Top"/>
-                    <Label Content="Description:" HorizontalAlignment="Left" Margin="10,220,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Category:" HorizontalAlignment="Left" Margin="29,159,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Name:" HorizontalAlignment="Left" Margin="41,191,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Description:" HorizontalAlignment="Left" Margin="12,220,0,0" VerticalAlignment="Top"/>
                     <TextBox x:Name="txtNameCategory" HorizontalAlignment="Left" Height="23" Margin="90,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
                     <TextBox x:Name="txtDescriptionCat" HorizontalAlignment="Left" Height="23" Margin="90,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
                     <TextBox x:Name="txtNameSubCat" HorizontalAlignment="Left" Height="23" Margin="90,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
                     <TextBox x:Name="txtDescriptionSubCat" HorizontalAlignment="Left" Height="23" Margin="90,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-                    <ComboBox x:Name="cbCategory" HorizontalAlignment="Left" Margin="90,130,0,0" VerticalAlignment="Top" Width="120" DataContext="{Binding Mode=OneWay, Source={StaticResource categoryViewSource}}" ItemsSource="{Binding Mode=OneWay}" DisplayMemberPath="name" SelectedValue="{Binding cid, Mode=OneWay}"/>
+                    <ComboBox x:Name="cbCategory" HorizontalAlignment="Left" Margin="90,160,0,0" VerticalAlignment="Top" Width="120" DataContext="{Binding Mode=OneWay, Source={StaticResource categoryViewSource}}" ItemsSource="{Binding Mode=OneWay}" DisplayMemberPath="name" SelectedValue="{Binding cid, Mode=OneWay}"/>
                     <Button x:Name="btnSaveCat" Content="Add Category" HorizontalAlignment="Left" Margin="90,70,0,0" VerticalAlignment="Top" Width="120" Click="btnSaveCat_Click"/>
                     <Button x:Name="btnSaveSubCat" Content="Add Sub Category" HorizontalAlignment="Left" Margin="90,248,0,0" VerticalAlignment="Top" Width="120" Click="btnSaveSubCat_Click"/>
                     <Label Content="Name:" HorizontalAlignment="Left" Margin="444,10,0,0" VerticalAlignment="Top"/>
                     <Label Content="Type:" HorizontalAlignment="Left" Margin="444,40,0,0" VerticalAlignment="Top"/>
                     <TextBox x:Name="txtNameScore" HorizontalAlignment="Left" Height="23" Margin="490,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
                     <TextBox x:Name="txtTypeScore" HorizontalAlignment="Left" Height="23" Margin="490,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-                    <Button x:Name="btnSaveScoreType" Content="Add Score" HorizontalAlignment="Left" Margin="490,68,0,0" VerticalAlignment="Top" Width="120"/>
+                    <Button x:Name="btnSaveScoreType" Content="Add Score" HorizontalAlignment="Left" Margin="490,68,0,0" VerticalAlignment="Top" Width="120" Click="btnSaveScoreType_Click"/>
 
                 </Grid>
             </TabItem>
