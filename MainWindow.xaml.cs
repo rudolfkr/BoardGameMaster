@@ -44,6 +44,11 @@ namespace BoardGameMaster
             boardGameMasterDataSetcategoryTableAdapter.Fill(boardGameMasterDataSet.category);
             System.Windows.Data.CollectionViewSource categoryViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("categoryViewSource")));
             categoryViewSource.View.MoveCurrentToFirst();
+            // Load data into the table subcategory. You can modify this code as needed.
+            BoardGameMaster.BoardGameMasterDataSetTableAdapters.subcategoryTableAdapter boardGameMasterDataSetsubcategoryTableAdapter = new BoardGameMaster.BoardGameMasterDataSetTableAdapters.subcategoryTableAdapter();
+            boardGameMasterDataSetsubcategoryTableAdapter.Fill(boardGameMasterDataSet.subcategory);
+            System.Windows.Data.CollectionViewSource subcategoryViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("subcategoryViewSource")));
+            subcategoryViewSource.View.MoveCurrentToFirst();
         }
 
         private void btnSavePlayer_Click(object sender, RoutedEventArgs e)
@@ -56,6 +61,13 @@ namespace BoardGameMaster
             BoardGameMaster.BoardGameMasterDataSetTableAdapters.categoryTableAdapter boardGameMasterDataSetcategoryTableAdapter = new BoardGameMaster.BoardGameMasterDataSetTableAdapters.categoryTableAdapter();
             boardGameMasterDataSetcategoryTableAdapter.Insert(txtNameCategory.Text, txtDescriptionCat.Text);
             MessageBox.Show("Category saved");
+        }
+
+        private void btnSaveSubCat_Click(object sender, RoutedEventArgs e)
+        {
+            BoardGameMaster.BoardGameMasterDataSetTableAdapters.subcategoryTableAdapter boardGameMasterDataSetsubcategoryTableAdapter = new BoardGameMaster.BoardGameMasterDataSetTableAdapters.subcategoryTableAdapter();
+            boardGameMasterDataSetsubcategoryTableAdapter.Insert(txtNameSubCat.Text, txtDescriptionSubCat.Text);
+            MessageBox.Show("SubCategory saved");
         }
     }
 }
