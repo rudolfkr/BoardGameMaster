@@ -64,7 +64,7 @@
                     <Label Content="Max Players:" HorizontalAlignment="Left" Margin="10,190,0,0" VerticalAlignment="Top"/>
                     <Label Content="Website:" HorizontalAlignment="Left" Margin="30,220,0,0" VerticalAlignment="Top"/>
                     <Label Content="Picture:" HorizontalAlignment="Left" Margin="36,250,0,0" VerticalAlignment="Top"/>
-                    <ComboBox x:Name="cbType" HorizontalAlignment="Left" Margin="90,10,0,0" VerticalAlignment="Top" Width="120"/>
+                    <ComboBox x:Name="cbType" HorizontalAlignment="Left" Margin="90,10,0,0" VerticalAlignment="Top" Width="120" DataContext="{Binding Mode=OneWay, Source={StaticResource categoryViewSource}}" ItemsSource="{Binding Mode=OneWay}" DisplayMemberPath="name"/>
                     <TextBox x:Name="txtNameGame" HorizontalAlignment="Left" Height="23" Margin="90,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
                     <TextBox x:Name="txtRules" HorizontalAlignment="Left" Height="23" Margin="90,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
                     <TextBox x:Name="txtDescriptionGame" HorizontalAlignment="Left" Height="23" Margin="90,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
@@ -77,7 +77,7 @@
                         <Image/>
                     </Border>
                     <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="669,446,0,0" VerticalAlignment="Top" Width="75"/>
-                    <Button Content="Button" HorizontalAlignment="Left" Margin="298,40,0,0" VerticalAlignment="Top" Width="75"/>
+                    <Button x:Name="btnAddGame" Content="Add Game" HorizontalAlignment="Left" Margin="90,286,0,0" VerticalAlignment="Top" Width="75"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Category and Score">
