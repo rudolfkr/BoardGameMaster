@@ -55,7 +55,7 @@
             </TabItem>
             <TabItem Header="Create BoardGame">
                 <Grid>
-                    <Label Content="Type:" HorizontalAlignment="Left" Margin="47,10,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Category:" HorizontalAlignment="Left" Margin="24,10,0,0" VerticalAlignment="Top"/>
                     <Label Content="Name:" HorizontalAlignment="Left" Margin="41,40,0,0" VerticalAlignment="Top"/>
                     <Label Content="Rules:" HorizontalAlignment="Left" Margin="44,70,0,0" VerticalAlignment="Top"/>
                     <Label Content="Description:" HorizontalAlignment="Left" Margin="12,100,0,0" VerticalAlignment="Top"/>
