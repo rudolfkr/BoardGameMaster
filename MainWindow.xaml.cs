@@ -49,6 +49,11 @@ namespace BoardGameMaster
             boardGameMasterDataSetsubcategoryTableAdapter.Fill(boardGameMasterDataSet.subcategory);
             System.Windows.Data.CollectionViewSource subcategoryViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("subcategoryViewSource")));
             subcategoryViewSource.View.MoveCurrentToFirst();
+            // Load data into the table score. You can modify this code as needed.
+            BoardGameMaster.BoardGameMasterDataSetTableAdapters.scoreTableAdapter boardGameMasterDataSetscoreTableAdapter = new BoardGameMaster.BoardGameMasterDataSetTableAdapters.scoreTableAdapter();
+            boardGameMasterDataSetscoreTableAdapter.Fill(boardGameMasterDataSet.score);
+            System.Windows.Data.CollectionViewSource scoreViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("scoreViewSource")));
+            scoreViewSource.View.MoveCurrentToFirst();
         }
 
         private void btnSavePlayer_Click(object sender, RoutedEventArgs e)
@@ -68,6 +73,13 @@ namespace BoardGameMaster
             BoardGameMaster.BoardGameMasterDataSetTableAdapters.subcategoryTableAdapter boardGameMasterDataSetsubcategoryTableAdapter = new BoardGameMaster.BoardGameMasterDataSetTableAdapters.subcategoryTableAdapter();
             boardGameMasterDataSetsubcategoryTableAdapter.Insert(txtNameSubCat.Text, txtDescriptionSubCat.Text);
             MessageBox.Show("SubCategory saved");
+        }
+
+        private void btnSaveScoreType_Click(object sender, RoutedEventArgs e)
+        {
+            BoardGameMaster.BoardGameMasterDataSetTableAdapters.scoreTableAdapter boardGameMasterDataSetscoreTableAdapter = new BoardGameMaster.BoardGameMasterDataSetTableAdapters.scoreTableAdapter();
+            boardGameMasterDataSetscoreTableAdapter.Insert(txtNameScore.Text, int.Parse(txtTypeScore.Text));
+            MessageBox.Show("Score saved");
         }
     }
 }
